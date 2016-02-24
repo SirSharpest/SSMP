@@ -11,3 +11,5 @@ unhappy with all the alternatives.
 The aim of this music player is to acomplish all of the above goals. So 
 far this is still in development and it simply plays music and (badly) 
 scans and loads a music library on Unix systems
+
+![Player in action](https://raw.githubusercontent.com/SirSharpest/SSMP/master/images/player.png)
