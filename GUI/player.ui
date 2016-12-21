@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>616</width>
-    <height>469</height>
+    <height>502</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -60,8 +60,8 @@
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>180</y>
+      <x>80</x>
+      <y>190</y>
       <width>460</width>
       <height>34</height>
      </rect>
@@ -157,6 +157,12 @@
      </item>
     </layout>
    </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>lblTimeProgress</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>pushButton</zorder>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
  </widget>

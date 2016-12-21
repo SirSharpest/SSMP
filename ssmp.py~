@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+
+import sys
+from PyQt4 import uic
+from PyQt4.QtCore import *
+from PyQt4.QtGui import *
+
+gui_file = 'GUI/mainwindow.ui'
+
+Ui_MainWindow, QtBaseClass = uic.loadUiType(gui_file)
+
+
+class PlantCaptureGui(QMainWindow, Ui_MainWindow):
+
+    def __init__(self):
+        QMainWindow.__init__(self)
+        Ui_MainWindow.__init__(self)
+        self.show()
+
+    def show_dialog(self, message):
+        msg = QMessageBox()
+        msg.setIcon(QMessageBox.Information)
+        msg.setText(message)
+        msg.setWindowTitle("Error")
+        msg.setStandardButtons(QMessageBox.Ok)
+        retval = msg.exec_()
+
+
+if __name__ == '__main__':
+    app = QApplication(sys.argv)
+    window = PlantCaptureGui()
+    sys.exit(app.exec_())
